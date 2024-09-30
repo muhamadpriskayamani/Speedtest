@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+</head>
+<body>
+
+    <select id="imageSelect">
+        <option value="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">Gambar 1</option>
+        <option value="https://ik.imagekit.io/tvlk/blog/2021/08/boracay-shutterstock_641355409.png?tr=dpr-2,w-675">Gambar 2</option>
+        <option value="https://www.rukita.co/stories/wp-content/uploads/2023/07/images-3-622eb79406ac5bd79321a945be628d1d.webp">Gambar 3</option>
+    </select>
+
+    <select id="opacitySelect">
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+
+    <input type="submit" value="Ubah" onclick="changeImageAndOpacity()">
+
+    <br><br>
+
+    <img id="imageDisplay" src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="Selected Image" style="opacity: 1; width: 500px;">
+
+    <script>
+        function changeImageAndOpacity() {
+            var imageSelect = document.getElementById("imageSelect");
+            var opacitySelect = document.getElementById("opacitySelect");
+            var imageDisplay = document.getElementById("imageDisplay");
+
+            var selectedImage = imageSelect.value;
+            var selectedOpacity = opacitySelect.value;
+
+            imageDisplay.src = selectedImage;
+            imageDisplay.style.opacity = selectedOpacity;
+        }
+    </script>
+</body>
+</html>

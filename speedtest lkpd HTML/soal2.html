@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tujuan Liburan</title>
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ff4d00;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    margin-left: 1.5rem;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+#destinasi {
+    padding: 2rem;
+    text-align: center;
+}
+
+#destinasi h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #34495e;
+}
+
+.destinasi-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destinasi {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.destinasi img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.destinasi h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.destinasi p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.destinasi .jalan {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.destinasi button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.destinasi button:hover {
+    background-color: #776d6d;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">Perjalanan Liburan</div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinasi">Destinasi</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="destinasi">
+        <h1>Destinasi Liburan Terbaik</h1>
+        <div class="destinasi-list">
+            
+            <div class="destinasi">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQusRaVEA9KckHrceKNo53DutW-VZxZerBRw&s" alt="Destinasi 1">
+                <h2>Candi Borobudur</h2>
+                <p>Candi Borobudur adalah monumen Buddha terbesar di dunia, dibangun pada abad ke-8 dengan relief dan arca Buddha yang memukau. Destinasi wajib di Jawa Tengah.</p>
+                <div class="jalan">
+                    <span> 50K viewers</span>
+                    <span> 500 comments</span>
+                </div>
+                <button>Read More</button>
+            </div>
+            
+            <div class="destinasi">
+                <img src="https://bromomalangtour.com/wp-content/uploads/2013/06/Gunung-Bromo.jpg" alt="Destinasi 2">
+                <h2>Gunung Bromo</h2>
+                <p> Gunung Bromo di Jawa Timur menawarkan matahari terbit yang memukau dan pemandangan vulkanik yang luar biasa. Destinasi sempurna untuk menikmati keindahan alam.</p>
+                <div class="jalan">
+                    <span> 80K viewers</span>
+                    <span> 800 comments</span>
+                </div>
+                <button>Read More</button>
+            </div>
+            
+            <div class="destinasi">
+                <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/06/09/IMG-20230609-WA0097-445843215.jpg" alt="Destinasi 3">
+                <h2>Bogor</h2>
+                <p>Bogor, Kota Hujan dengan udara sejuk, menawarkan keindahan alam dan sejarah. Dari kebun raya hingga Istana Bogor, temukan pesona alam yang menenangkan.</p>
+                <div class="jalan">
+                    <span> 60K viewers</span>
+                    <span> 600 comments</span>
+                </div>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
